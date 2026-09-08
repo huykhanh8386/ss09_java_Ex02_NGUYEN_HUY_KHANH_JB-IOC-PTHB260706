@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Ex02Session09Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Ex02Session09[] books = new Ex02Session09[3];
+        for (int i=0; i < books.length; i++){
+            System.out.println("Nhập thông tin sách thứ " +(i+1));
+            System.out.println("Tên sách: ");
+            String title = sc.nextLine();
+            System.out.println("Tác giả: ");
+            String author = sc.nextLine();
+            System.out.println("Giá: ");
+            double price = Double.parseDouble(sc.nextLine());
+            books[i] = new Ex02Session09(title, author, price);
+        }
+        System.out.println("\n=====DANH SÁCH SÁCH=====");
+        for (int i=0; i < books.length; i++){
+            System.out.println("Sách thứ: " +(i+1));
+            books[i].printInfo();
+        }
+    }
+}
