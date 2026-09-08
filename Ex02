@@ -1,0 +1,15 @@
+public class Ex02Session09 {
+    private String title;
+    private String author;
+    private double price;
+    public Ex02Session09(String title,String author,double price){
+        this.title=title;
+        this.author=author;
+        this.price=price;
+    }
+    public void printInfo(){
+        System.out.println("Nhập tên sách: " + title);
+        System.out.println("Nhập tác giả: " + author);
+        System.out.println("Nhập giá tiền: " + price);
+    }
+}
